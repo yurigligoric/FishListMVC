@@ -1,0 +1,36 @@
+﻿@model Fish
+
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<H5>Create</H5>
+
+<div>
+    <div class="card-header">
+
+    </div>
+    <div class="card-body">
+        <form asp-for="HelloWorld" asp-action="CreateFish" method="post">
+            <div class="mb=3">
+                <label class="form-label">Dog Name</label>
+                <input asp-for=Name type="text" class="form-control"/>
+
+            </div>
+            <div class="mb=3">
+                <label class="form-label">Dog Age</label>
+                <input asp-for=Age type="number" class="form-control"/>
+            </div>
+            <div class="mb=3">
+                <button class="btn btn-primary">Save</button>
+            </div>
+        </form>
+
+    </div>
+    <div class="card-footer">
+
+    </div>
+</div>

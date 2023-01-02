@@ -1,0 +1,16 @@
+﻿@model List<FishListMVC.Models.Fish>
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<H1>Fish List</H1>
+<ul>
+    @foreach(Fish fish in Model)
+    {
+        <li>@fish.Name (@fish.Age)</li>
+    }
+
+</ul>
